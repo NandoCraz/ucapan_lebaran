@@ -25,7 +25,7 @@
       }
 
       .card {
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 1);
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         padding: 20px;
@@ -44,11 +44,11 @@
         border-radius: 10px;
       }
 
-      /* .family-photo {
-        width: 200px;
-        border-radius: 50%;
+      .family-photo {
+        width: 300px;
+        /* border-radius: 50%; */
         margin-bottom: 20px;
-      } */
+      }
 
       button {
         background-color: #007bff;
@@ -98,24 +98,21 @@
     <div class="container">
       <div class="card">
         <!-- <div class="background"></div> -->
-        <!-- <img src="family.jpg" alt="Foto Keluarga" class="family-photo" /> -->
+        <img src="qr.jpeg" class="family-photo" />
         <h1>Selamat Hari Raya Idul Fitri!</h1>
-        <p>
-          Ja'alanallahu minal 'aidin wal faizin <br />
-          Mohon Maaf Lahir dan Batin. <br />
-          Dari Nando Sekeluarga😁🙏
-        </p>
-        <button id="toggleButton">Ucapan Kami</button>
+        <p>Barang kali ada yang mau buang-buang uang Mas, Mbak, Ibu, Bapak, Adik, Om, Tante, Pakdhe, Budhe, Kakak, atau yang lainnya😋🤲</p>
+        <a href="index.html">
+          <button id="toggleButton">Balik Aja</button>
+        </a>
         <div id="doa" class="hidden">
           <p>Tak ada kesucian menjadi sempurna tatkala ada salah satu kebencian tertanam dalam jiwa membasuh jiwa dengan permintaan maaf. Terkirim dari lubuk hati atas kesalahan selama ini.</p>
           <p>تَقَبَّلَ اللَّهُ مِنَّا وَمِنْكُمْ وَ تَقَبَّلْ ياَ كَرِيْمُ</p>
           <p>“Mudah-mudahan Allah menerima amal ibadah kita dan kamu semua, dan terimalah ya (Allah) yang maha Mulia”.</p>
-          <a href="thr.html" style="font-style: italic">Rahasia</a>
         </div>
       </div>
     </div>
 
-    <script>
+    <!-- <script>
       document.getElementById("toggleButton").addEventListener("click", function () {
         var doa = document.getElementById("doa");
         doa.classList.toggle("hidden");
@@ -124,6 +121,6 @@
         var button = document.getElementById("toggleButton");
         button.classList.toggle("clicked");
       });
-    </script>
+    </script> -->
   </body>
 </html>
