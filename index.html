@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kartu Ucapan Lebaran</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url("background.jpeg");
+        background-size: cover;
+        background-position: center;
+        padding: 0 10px;
+      }
+
+      .card {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        max-width: 400px;
+        position: relative;
+      }
+
+      .background {
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+
+      /* .family-photo {
+        width: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      } */
+
+      button {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+
+      /* .hidden {
+        display: none;
+      } */
+
+      button.clicked {
+        animation: pulse 0.3s;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .hidden {
+        opacity: 0;
+        display: none;
+      }
+
+      .visible {
+        opacity: 1;
+        transition: opacity 0.1s ease-in;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <!-- <div class="background"></div> -->
+        <!-- <img src="family.jpg" alt="Foto Keluarga" class="family-photo" /> -->
+        <h1>Selamat Hari Raya Idul Fitri!</h1>
+        <p>
+          Ja'alanallahu minal 'aidin wal faizin <br />
+          Mohon Maaf Lahir dan Batin. <br />
+          Dari Nando Sekeluarga😁🙏
+        </p>
+        <button id="toggleButton">Ucapan Kami</button>
+        <div id="doa" class="hidden">
+          <p>Tak ada kesucian menjadi sempurna tatkala ada salah satu kebencian tertanam dalam jiwa membasuh jiwa dengan permintaan maaf. Terkirim dari lubuk hati atas kesalahan selama ini.</p>
+          <p>فعن جُبَيْرِ بْنِ نُفَيْرٍ قَالَ : كَانَ أَصْحَابُ رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ إِذَا اِلْتَقَوْا يَوْمَ الْعِيدِ يَقُولُ بَعْضُهُمْ لِبَعْضٍ : تَقَبَّلَ اللَّهُ مِنَّا وَمِنْك . قال الحافظ : إسناده حسن</p>
+          <p>“Dari Jubair bin Nufair, ia berkata bahwa jika para sahabat Rasulullah SAW berjumpa dengan hari ‘ied (Idul Fitri atau Idul Adha, pen), satu sama lain saling mengucapkan, taqobbalallahu minna wa minkum.”</p>
+          <p>تَقَبَّلَ اللَّهُ مِنَّا وَمِنْكُمْ وَ تَقَبَّلْ ياَ كَرِيْمُ</p>
+          <p>“Mudah-mudahan Allah menerima amal ibadah kita dan kamu semua, dan terimalah ya (Allah) yang maha Mulia”.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("toggleButton").addEventListener("click", function () {
+        var doa = document.getElementById("doa");
+        doa.classList.toggle("hidden");
+        doa.classList.toggle("visible");
+
+        var button = document.getElementById("toggleButton");
+        button.classList.toggle("clicked");
+      });
+    </script>
+  </body>
+</html>
